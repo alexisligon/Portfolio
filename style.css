@@ -1,0 +1,71 @@
+:root {
+    --peach: #FAC0BA;
+    --olive: #7C6B3A;
+}
+
+body {
+    font-family: 'source sans pro', sans-serif;
+
+}
+
+header {
+    color: var(--olive);
+    padding: 10px;
+    margin: 10px;
+    text-transform: uppercase;
+    background-color: var(--peach);
+    height: auto;
+}
+
+header h1 {
+    text-align: left;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    background-color: #c0be31;
+    
+}
+
+nav {
+    text-align: right;
+}
+
+nav a {
+    font-size: 16px;
+    text-decoration: none;
+    color: var(--olive);
+    font-weight: 200;
+    padding: 5px;
+}
+
+nav a:hover {
+    color: #000000;
+}
+
+.about h2{
+    color: var(--olive);
+    font-size: 35px;
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+
+}
+
+.name {
+    text-align: center;
+    color: var(--olive);
+    background-image: url(./img/botanical.jpg);
+    /*<a href='https://www.freepik.com/vectors/watercolor'>Watercolor vector created by rawpixel.com - www.freepik.com</a>*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 800px;
+}
+
+.name h2 {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.name h3 {
+    font-size: 35px;
+}
