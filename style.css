@@ -112,6 +112,10 @@ nav a:hover {
     text-decoration: none;
 }
 
+.card nav a:hover {
+    background-color: white;
+}
+
 
 .card img {
    width: 100%;
@@ -119,4 +123,31 @@ nav a:hover {
    min-width: 265px;
 }
 
+/*** contact styling ***/
 
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    color: var(--olive);
+    padding: 10px;
+    margin: auto;
+    text-transform: uppercase;
+    background-color: var(--peach);
+    height: auto;
+    width: 100%;
+    padding: 20px;
+}
+
+.contact h2 {
+    text-align: left;
+    font-size: 20px;
+    border-right: 5px solid var(--olive);
+    padding-right: 10px;
+}
+
+
+
+.contact nav a:hover {
+    background-color: white;
+}
