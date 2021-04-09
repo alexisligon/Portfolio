@@ -1,6 +1,7 @@
 :root {
     --peach: #FAC0BA;
     --olive: #7C6B3A;
+    --lime: #c0be31;
 }
 
 * {
@@ -35,7 +36,7 @@ header h1 {
     text-align: left;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 30px;
-    background-color: #c0be31;
+    background-color: var(--lime);
     border: 5px dotted white;
     padding: 10px;
 }
@@ -50,7 +51,6 @@ nav a {
     font-size: 20px;
     text-decoration: none;
     color: var(--olive);
-    font-weight: 200;
     padding: 5px;
 }
 
@@ -58,11 +58,11 @@ nav a:hover {
     color: #000000;
 }
 
-/* styling for background image */
+/* styling for subheader */
 .subheader {
     display: flex;
     flex-wrap: wrap;
-    background-color: #c0be31;
+    background-color: var(--lime);
     flex-direction: column-reverse;
     justify-content: center;
     width: 100%;
@@ -78,18 +78,17 @@ nav a:hover {
    border-radius: 50%;
    margin: 10px;
    display: block;
-   margin-left: auto;
-   margin-right: auto;
+   margin: 5px auto 25px;
    width: 50%;
    
 }
 
-.subheader h1 {
+.subheader h2 {
     text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 48px;
     color: var(--olive);
-    background-color: #c0be31;
+    background-color: var(--peach);
     border: 5px dotted white;
     padding: 10px;
     width: fit-content;
@@ -135,7 +134,7 @@ nav a:hover {
 .projects-section {
     display: flex;
     flex-wrap: wrap;
-    background-color: #c0be31;
+    background-color: var(--lime);
     width: 100%;
 }
 
