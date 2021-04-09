@@ -1,43 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
+  <head>
+    <title>Alexis Ligon Portfolio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
-    <title>Alexis Ligon</title>
-</head>
-<body>
-
-    <!--beginning of header-->
-    <header>
-        <!--name should be on left-->
-        <section class="name">
-            <h1>
-                Alexis Ligon
-            </h1>
-        </section>
-        <!--nav located on right-->
-        <nav>
+  </head>
+  <body>
+    <!-- beginning of header -->
+    <header class="top-header">
+        <!--name on left-->
+         <section>
+            <h1>Alexis Ligon</h1>
+         </section>
+         <!--nav on right-->
+         <nav class="header-nav">
             <a href="#me">About Me</a>
             <a href="#work">Work</a>
             <a href="#contact">Contact Me</a>
-        </nav>
-        <!--title-->
-       <!-- <section class="title">
-            <h1>
-                Full Stack Web Developer
-            </h1>
-        </section>-->
+         </nav>
+
     </header>
 
+         <!--subheader-->
+    <header class="subheader">
+        <div>
+            <h2>Full Stack Web Developer</h2>
+        </div>
+        <div>
+            <img src="./img/IMG_4038.jpg" alt="alexis">
+        </div>
+    </header>
+
+
+    <!-- main content -->
     <main>
         <!--about me section-->
+        <section class="content">
 
-        <section class="about">
-            <h2 id="title">About Me</h2>
-            <p id="me">I am a full-stack web developer!!!!!!!! I have finally embarked on the life long 
+            <!--sidebar to left-->
+            <aside class="title" id="me">
+                <h3 >About Me</h3>
+            </aside>
+
+            <!--main content to right-->
+            <div class="about">
+                <p>
+                I am a full-stack web developer!!!!!!!! I have finally embarked on the life long 
                 journey of learning all things web development. I look forward to discovering
                 the intricacies of the web and all that coding entails.
                 <br>
@@ -48,55 +58,72 @@
                 <br>
                 If I am not working on improving my code, you can find me reading the next Haruki
                 Murakami novel or painting. My cat, Goose, is my muse and constant distraction. 
-            </p>
+                </p>
+            </div>
+
         </section>
 
-        <!--work section-->
-        <section class="projects" id="work">
-                    <figure class="card">
-                    <a href="#">
-                        <h3>Project 1</h3> 
-                        <img src="./img/cat.jpg" alt="sleeping-cat">
-                    </a>
-                    </figure>
+      <!--Work section -->
+        <section class="content">
+            <!--sidebar title to left-->
+            <aside class="title" id="work">
+                <h3 >Work</h3>
+            </aside>
 
-                    <figure class="card">
-                    <a href="#">
-                    <h3>Project 2</h3>
+            <!-- projects to right -->
+            <div>
+
+                <section class="card">
+                    <header>Project 1</header>
+                    <img src="./img/cat.jpg" alt="sleeping-cat">
+                </section>
+
+                <section class="card">
+                    <header>Project 2</header>
                     <img src="./img/forest.jpg" alt="redwood-forest">
-                    </a>
-                    </figure>
+                </section>
 
-                    <figure class="card">
-                    <a href="#">
-                        <h3>Project 3</h3>
-                        <img src="./img/paint.jpg" alt="paint-brush">
-                    </a>
-                    </figure>
+                <section class="card">
+                    <header>Project 3</header>
+                    <img src="./img/paint.jpg" alt="paint-brush">
+                </section>
 
-                    <figure class="card">
-                    <a href="#">
-                    <h3>Project 4</h3>
-                    <img src="./img/pretty.jpg" alt="butterfly" >
-                    </a>
-                    </figure>
-   
+                <section class="card">
+                    <header>Project 4</header>
+                    <img src="./img/pretty.jpg" alt="butterfly">
+                </section>
+
+                <section>
+                    <header>Project 5</header>
+                    <img src="./img/grand-canyon.jpeg" alt="grand-canyon">
+                </section>
+
+            </div>
+    
         </section>
+
 
       <!--contact section-->
-        <section class="contact" id="contact">
-           <aside><h2>Contact Me</h2></aside> 
-            <nav>
-                <a href="https://gmail.com">aligon17@gmail.com</a>
-                <a href="https://github.com/alexisligon" target="_blank">Github</a>
-                <a href="https://www.linkedin.com/in/alexisligon1612/" target="_blank">Linkedin</a>
-            </nav>
-        </section>
-    </main>
-    
-</body>
+      <section class="content">
+        <aside class="title" id="contact">
+            <h3 >Contact Me</h3>
+        </aside> 
 
-<footer>
-    Thank you for visiting!
-</footer>
+         <nav>
+             <a href="mailto:aligon17@gmail.com">aligon17@gmail.com</a>
+             <a href="https://github.com/alexisligon" target="_blank">Github</a>
+             <a href="https://www.linkedin.com/in/alexisligon1612/" target="_blank">Linkedin</a>
+         </nav>
+         
+     </section>
+
+    </main>
+
+    <!-- Footer -->
+        <footer>
+        <h3>
+            Thank you for visiting!
+        </h3>
+        </footer>
+  </body>
 </html>
