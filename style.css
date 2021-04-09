@@ -1,8 +1,9 @@
 :root {
     --peach: #FAC0BA;
     --olive: #7C6B3A;
-    --lime: #c0be31;
+    --lime: #BFD641;
     --blue: #4169e1;
+    --pink: #BC70A4;
 }
 
 * {
@@ -31,7 +32,8 @@ header {
     padding: 10px;
     margin: auto;
     text-transform: uppercase;
-    background-color: var(--peach);
+    background-image: linear-gradient(to top right, var(--pink), #eed4d3);
+    /*background-color: var(--peach);*/
     height: auto;
 }
 
@@ -67,7 +69,7 @@ nav a:hover {
 .subheader {
     display: flex;
     flex-wrap: wrap;
-    background-color: var(--lime);
+    background-image: linear-gradient(to bottom right, var(--pink), #eed4d3);
     flex-direction: column-reverse;
     justify-content: center;
     width: 100%;
@@ -93,7 +95,7 @@ nav a:hover {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 48px;
     color: var(--olive);
-    background-color: var(--peach);
+   background-color: var(--lime);
     border: 5px dotted var(--blue);
     padding: 10px;
     width: fit-content;
@@ -108,6 +110,16 @@ nav a:hover {
    width: 100%;
    justify-content: space-between;
 }
+
+#one, #three {
+    background-image: linear-gradient(to bottom left, #eed4d3, var(--pink));
+}
+
+#two {
+    background-image: linear-gradient(to bottom right, var(--pink), #eed4d3);
+}
+
+
 
 .title, .goodstuff {
     height: auto;
@@ -125,7 +137,7 @@ nav a:hover {
 
 .goodstuff {
     width: 70%;
-    border-left: var(--olive) solid 5px;
+    border-left: var(--olive) double 5px;
     font-size: 20px;
     padding-left: 25px;
     padding-top: 15px;
@@ -166,6 +178,10 @@ nav a:hover {
     position: relative;
     flex: 25%;
     min-width: 200px;
+}
+
+.card:hover, nav a:hover  {
+    box-shadow: inset 0px 0px 20px var(--blue), 0 0 20px var(--blue);
 }
 
 .card img {
@@ -227,6 +243,7 @@ nav a:hover {
     #contact-nav {
         flex-direction: column;
         align-items: center;
+        
     }
     
 } 
