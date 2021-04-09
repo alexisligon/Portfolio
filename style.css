@@ -2,6 +2,7 @@
     --peach: #FAC0BA;
     --olive: #7C6B3A;
     --lime: #c0be31;
+    --blue: #4169e1;
 }
 
 * {
@@ -39,7 +40,7 @@ header h1 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 30px;
     background-color: var(--lime);
-    border: 5px dotted white;
+    border: 5px dotted var(--blue);
     padding: 10px;
 }
 
@@ -57,7 +58,9 @@ nav a {
 }
 
 nav a:hover {
-    color: #000000;
+    color: var(--blue);
+    background-color: white;
+    border-radius: 50%;
 }
 
 /* styling for subheader */
@@ -91,7 +94,7 @@ nav a:hover {
     font-size: 48px;
     color: var(--olive);
     background-color: var(--peach);
-    border: 5px dotted white;
+    border: 5px dotted var(--blue);
     padding: 10px;
     width: fit-content;
     margin: auto;
@@ -102,8 +105,8 @@ nav a:hover {
     display: flex;
     flex-wrap: wrap;
     background-color: var(--peach);
-   
-   
+   width: 100%;
+   justify-content: space-between;
 }
 
 .title, .goodstuff {
@@ -129,6 +132,10 @@ nav a:hover {
     padding-bottom: 15px;
 }
 
+.goodstuff p{
+    padding-right: 50px;
+}
+
 
 /*----------work/projects styling------------------*/
 
@@ -152,7 +159,7 @@ nav a:hover {
 }
 
 .card {
-    border: 5px dotted white;
+    border: 5px dotted var(--blue);
     padding: 10px;
     text-align: center;
     margin: 20px;
@@ -172,50 +179,54 @@ nav a:hover {
     font-size: 25px;
 }
 
-/*** contact styling ***/
-/*
-.contact {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    color: var(--olive);
-    padding: 10px;
-    margin: auto;
-    text-transform: uppercase;
-    background-color: var(--peach);
-    height: auto;
-    width: 100%;
-    padding: 20px;
+.card a {
+    text-decoration: none;
 }
 
-.contact h2 {
-    text-align: left;
-    font-size: 30px;
-    margin: 10px;
-    border-right: 5px solid var(--olive);
-    padding-right: 10px;
-}
-
-.contact nav {
-  text-align: right;
-  align-self: center;
-}
-
-
-
-.contact nav a:hover {
+.card a h4:hover {
+    color: var(--blue);
     background-color: white;
 }
 
-/* Media Queries 
+/*** contact styling ***/
+#contact-nav {
+    text-align: right;
+    display: flex;
+    align-self: center;
+    justify-content: space-around;
+    padding-right: 25px;
+}
+
+/* Media Queries */
 
 @media screen and (max-width: 768px) {
-    main, nav {
+    main, nav, a {
         flex-direction: column;
+        padding: 0;
+        flex: 0 0 50%;
     }
 
-    h2 {
+    .content {
         flex-direction: column;
+        align-items: center;
+    }
+    .title {
+        width: 75%;
+       text-align: center;
+       border-bottom: 5px solid var(--olive);
     }
     
-} */
+    .goodstuff {
+        border-left: none;
+        padding: 5px;
+        flex-direction: column;
+        text-align: center;
+       padding: 0;
+    }
+
+    #contact-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+} 
